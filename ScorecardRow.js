@@ -18,16 +18,15 @@ var ScorecardRow = React.createClass({
   render: function() {
     return (
       <TouchableHighlight underlayColor={this.underlayColor()} onPress={this.props.onSelect}>
-        <View style={styles.row}>
-          <View style={styles.row__body}>
-            <Text style={styles.row__title}>{this.props.scorecard.course}</Text>
-            <Text style={styles.row__timestamp}>
-              {this.props.scorecard.date}
-            </Text>
+        <View style={styles.wrapper}>
+          <View style={styles.meta_header}>
+            <Text style={[styles.small_and_gray, styles.course]}>{this.props.scorecard.course}</Text>
+            <Text style={[styles.small_and_gray, styles.date]}>{this.props.scorecard.date}</Text>
           </View>
-          <Text style={styles.row__size}>
-            {this.props.scorecard.strokes}
-          </Text>
+          <View style={styles.data_row}>
+            <Text style={styles.strokes}>{this.props.scorecard.strokes}</Text>
+            <Text style={styles.score}>{this.props.scorecard.strokes_over_par}</Text>
+          </View>
         </View>
       </TouchableHighlight>
     );
@@ -35,32 +34,41 @@ var ScorecardRow = React.createClass({
 })
 
 var styles = StyleSheet.create({
-  row: {
-    paddingTop: 20,
-    paddingBottom: 20,
-    paddingLeft: 15,
-    paddingRight: 20,
-    borderBottomColor: '#eeeeee',
-    borderBottomWidth: 1,
+  wrapper: {
+    padding: 10,
+    margin: 10,
+    marginBottom: 0,
+    backgroundColor: '#F5F5F5',
+  },
+  meta_header: {
+    flexDirection: 'row',
+    alignItems: 'center'
+  },
+  course: {
+    textAlign: 'left'
+  },
+  date: {
+    textAlign: 'right',
+    flex: 1
+  },
+  small_and_gray: {
+    fontSize: 10,
+    fontWeight: '600',
+    color: '#777777'
+  },
+  data_row: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  row__size: {
-    fontSize: 22,
-    fontWeight: "200",
-    width: 50,
-    textAlign: "right",
+  strokes: {
+    fontSize: 40,
+    fontWeight: 'bold',
+    flex: 1
   },
-  row__body: {
-    flex: 1,
-  },
-  row__title: {
-    fontSize: 14,
-  },
-  row__timestamp: {
-    fontWeight: "300",
-    color: '#777777',
-  },
+  score: {
+    fontSize: 20,
+    flex: 1
+  }
 });
 
 module.exports = ScorecardRow

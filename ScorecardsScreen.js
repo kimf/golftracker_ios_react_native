@@ -30,7 +30,7 @@ var ScorecardsScreen = React.createClass({
       .then((response) => response.json())
       .then((responseData) => {
         this.setState({
-          dataSource: this.state.dataSource.cloneWithRows(responseData.scorecards),
+          dataSource: this.state.dataSource.cloneWithRows(responseData.scorecards.reverse()),
           loaded: true,
         });
       })

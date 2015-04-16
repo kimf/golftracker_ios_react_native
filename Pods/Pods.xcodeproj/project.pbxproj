@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03EDB406D342F0D403725A11 /* PNLineChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FA30D5F17787DFC0744E672E /* PNLineChartDataItem.m */; };
+		049F30E17E83589CF47E2005 /* PNColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2088EDB7D528175E4FF7D490 /* PNColor.h */; };
+		0626E57099039D20F22F2FAD /* PNScatterChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 5268D5D5E618F1F10A5AC9A4 /* PNScatterChartData.h */; };
+		0D297807D7B17BF6C853ECAE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B55E85F40D4B593B287852 /* Foundation.framework */; };
+		1540C6F1B61253319CBF6213 /* PNBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 049EC2E6D927C5FB15915EBB /* PNBar.h */; };
+		249FB07E42F6E3CDB5C9BD89 /* Pods-GolfTracker-UICountingLabel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E1BD8A0AD8FD4C7F20C97 /* Pods-GolfTracker-UICountingLabel-dummy.m */; };
+		253C387FDADA3254609CA53F /* PNPieChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C0D8872931540608900DD3 /* PNPieChart.h */; };
+		27137042C68020D0F3092D31 /* PNBarChart.h in Headers */ = {isa = PBXBuildFile; fileRef = F2DED0754739FB2BB81C9D09 /* PNBarChart.h */; };
+		2920BE011AE6124614608629 /* UICountingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = D98BF183832DC35504C32B14 /* UICountingLabel.h */; };
+		29C8EE51E6728436FBE00AE1 /* PNLineChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9E93168848644EF322E6C3 /* PNLineChart.h */; };
+		2B769619B4555259F9F4CFA7 /* PNPieChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 58D64D7111C7B3D84D19CC39 /* PNPieChart.m */; };
+		3137B9AF69FBF364414F91BE /* PNLineChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C83ABF0E7025DC2A8E08436 /* PNLineChartDataItem.h */; };
+		392F950540B5EAB34580C98E /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E72B0691487CF026E35AB6A /* PNBarChart.m */; };
+		39D807E8A3E5BFC1B506D0C7 /* PNGenericChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AA3C08C8C2F14B0817687F9 /* PNGenericChart.h */; };
+		3FEDED79F6DD744C544F33AC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B55E85F40D4B593B287852 /* Foundation.framework */; };
+		45BCEE5401086D4139D920C6 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2A36D223EDDF8336DE53A7B /* PNBar.m */; };
+		4B8002F180A0824A6EB83F42 /* Pods-GolfTracker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9283776552BA8CDBF34520C3 /* Pods-GolfTracker-dummy.m */; };
+		515E84CE9E7889F149045EAE /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C2DFFDFFF7EF86752E7355D /* PNChartLabel.m */; };
+		517E213D761B5F98575CF8CE /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7FFE83E2486DDDBD65E99 /* PNScatterChartDataItem.m */; };
+		5781C0ED667F3D52441F29ED /* PNCircleChart.h in Headers */ = {isa = PBXBuildFile; fileRef = BD83E7BC0C8FE06111FF2C85 /* PNCircleChart.h */; };
+		638351B3E059EF35718AB024 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785A4BF4E6BBD03117A86A79 /* QuartzCore.framework */; };
+		725E8C90C663A41ACDC6608F /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D895E3F234B029DAD8B2F7C /* UICountingLabel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		7733EE838D5D8A1AED7A4768 /* PNChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A35A36470A1E2F67C122255A /* PNChart.h */; };
+		7ECAB2A5FBBBBAC68686AF96 /* PNChartLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E99794EF542890A8213478F /* PNChartLabel.h */; };
+		8111E0798DF6748A2D61D66E /* PNChartDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C782B80BD930CDE7289BDFD /* PNChartDelegate.h */; };
+		815C143B223A7E8B94C8A43B /* PNCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = F0534A6D87A9FC44B5738568 /* PNCircleChart.m */; };
+		91B80FB73C06618133D8221F /* PNLineChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 53897B4664DC4AECF221ADF6 /* PNLineChart.m */; };
+		91CEC4251FACF9789017E743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B55E85F40D4B593B287852 /* Foundation.framework */; };
+		92980CC136211ECB3AAC7B99 /* Pods-GolfTracker-PNChart-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4F02C9F5B465C186970466F /* Pods-GolfTracker-PNChart-dummy.m */; };
+		94C63E97E7F85BEE169355E2 /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = DCCF833D127FC0AE9648682E /* PNScatterChartData.m */; };
+		A53479191199E2F66D5938BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCC912AFC7C38C1BF6D65F5 /* UIKit.framework */; };
+		ADFD15E4F7586892E9A45F96 /* PNScatterChart.h in Headers */ = {isa = PBXBuildFile; fileRef = FF8CCA6985A1A40DBBC4B686 /* PNScatterChart.h */; };
+		B0EB7010C5F1135AB247D6BC /* PNLineChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = F59A9BCC23F6506EA2E7DF07 /* PNLineChartData.m */; };
+		B2B8E1F9ADE18B86ED481190 /* PNScatterChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CB5CFA5694EF34EE0731398 /* PNScatterChart.m */; };
+		B7AEE146785D80A6B66F298F /* PNPieChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D7D0DFC11A8323E8D41968DD /* PNPieChartDataItem.h */; };
+		CAD18CBA14294ACB29ED9B34 /* PNGenericChart.m in Sources */ = {isa = PBXBuildFile; fileRef = C23D3B6B754CC0E153A88A89 /* PNGenericChart.m */; };
+		D2C779C34160BDD8176DBE7C /* PNLineChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E0BB7582C251BDA3D7EFDE0 /* PNLineChartData.h */; };
+		D7BE647124E6130CE29AFC51 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D539EEAFA765981767B23F /* CoreGraphics.framework */; };
+		D7C41DCF2FCF3B1DA06094A4 /* PNScatterChartDataItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 27D6D6C51926F916B0CB5E20 /* PNScatterChartDataItem.h */; };
+		ED2A4E41C9465AE5988EDC8C /* PNPieChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A3B7ADAF0A77FBD72F6FA13A /* PNPieChartDataItem.m */; };
+		F89D029D19D3516674C6776D /* PNColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A0A1AF96DCE118BB29B5CC /* PNColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B5C19934B6EAD24A05FD7A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF87D81FD9F1683ED3A7286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7935DAB75674D672369FF3B;
+			remoteInfo = "Pods-GolfTracker-UICountingLabel";
+		};
+		7D3F8124BEC52035417A4B98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF87D81FD9F1683ED3A7286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7935DAB75674D672369FF3B;
+			remoteInfo = "Pods-GolfTracker-UICountingLabel";
+		};
+		80EF944CBBE5F29547D8AB41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0EF87D81FD9F1683ED3A7286 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C56CCAD80F57A34186E41F9;
+			remoteInfo = "Pods-GolfTracker-PNChart";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		049EC2E6D927C5FB15915EBB /* PNBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBar.h; path = PNChart/PNBar.h; sourceTree = "<group>"; };
+		07AF6D7EDA783919FBB6257F /* Pods-GolfTracker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GolfTracker-acknowledgements.plist"; sourceTree = "<group>"; };
+		0C2DFFDFFF7EF86752E7355D /* PNChartLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNChartLabel.m; path = PNChart/PNChartLabel.m; sourceTree = "<group>"; };
+		0C83ABF0E7025DC2A8E08436 /* PNLineChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartDataItem.h; path = PNChart/PNLineChartDataItem.h; sourceTree = "<group>"; };
+		13C0D8872931540608900DD3 /* PNPieChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChart.h; path = PNChart/PNPieChart.h; sourceTree = "<group>"; };
+		15106D30687CFA8D031E6EC3 /* Pods-GolfTracker-UICountingLabel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GolfTracker-UICountingLabel.xcconfig"; sourceTree = "<group>"; };
+		1D5E1BD8A0AD8FD4C7F20C97 /* Pods-GolfTracker-UICountingLabel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GolfTracker-UICountingLabel-dummy.m"; sourceTree = "<group>"; };
+		2088EDB7D528175E4FF7D490 /* PNColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNColor.h; path = PNChart/PNColor.h; sourceTree = "<group>"; };
+		22613D987A8790EA54AF6721 /* Pods-GolfTracker-UICountingLabel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GolfTracker-UICountingLabel-prefix.pch"; sourceTree = "<group>"; };
+		2428C7ABF4E5F4B3A877E590 /* Pods-GolfTracker-PNChart.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GolfTracker-PNChart.xcconfig"; sourceTree = "<group>"; };
+		27D6D6C51926F916B0CB5E20 /* PNScatterChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartDataItem.h; path = PNChart/PNScatterChartDataItem.h; sourceTree = "<group>"; };
+		29C96534A311EB0D925AA28A /* Pods-GolfTracker-UICountingLabel-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GolfTracker-UICountingLabel-Private.xcconfig"; sourceTree = "<group>"; };
+		3AA3C08C8C2F14B0817687F9 /* PNGenericChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNGenericChart.h; path = PNChart/PNGenericChart.h; sourceTree = "<group>"; };
+		3E9E93168848644EF322E6C3 /* PNLineChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChart.h; path = PNChart/PNLineChart.h; sourceTree = "<group>"; };
+		4AB185B245ED95CF707916ED /* Pods-GolfTracker-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GolfTracker-resources.sh"; sourceTree = "<group>"; };
+		4D6A49F7F4BCB570E929FB9B /* Pods-GolfTracker-PNChart-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GolfTracker-PNChart-Private.xcconfig"; sourceTree = "<group>"; };
+		5268D5D5E618F1F10A5AC9A4 /* PNScatterChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChartData.h; path = PNChart/PNScatterChartData.h; sourceTree = "<group>"; };
+		53897B4664DC4AECF221ADF6 /* PNLineChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChart.m; path = PNChart/PNLineChart.m; sourceTree = "<group>"; };
+		58D64D7111C7B3D84D19CC39 /* PNPieChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChart.m; path = PNChart/PNPieChart.m; sourceTree = "<group>"; };
+		5BCC912AFC7C38C1BF6D65F5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		6E72B0691487CF026E35AB6A /* PNBarChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBarChart.m; path = PNChart/PNBarChart.m; sourceTree = "<group>"; };
+		71EC19390616E800D9A4DC2A /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		74B55E85F40D4B593B287852 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		785A4BF4E6BBD03117A86A79 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		7C782B80BD930CDE7289BDFD /* PNChartDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartDelegate.h; path = PNChart/PNChartDelegate.h; sourceTree = "<group>"; };
+		7E99794EF542890A8213478F /* PNChartLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChartLabel.h; path = PNChart/PNChartLabel.h; sourceTree = "<group>"; };
+		85B8B5D287A8EE74756C1559 /* Pods-GolfTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GolfTracker.release.xcconfig"; sourceTree = "<group>"; };
+		8D895E3F234B029DAD8B2F7C /* UICountingLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		8E0BB7582C251BDA3D7EFDE0 /* PNLineChartData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNLineChartData.h; path = PNChart/PNLineChartData.h; sourceTree = "<group>"; };
+		90A0A1AF96DCE118BB29B5CC /* PNColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNColor.m; path = PNChart/PNColor.m; sourceTree = "<group>"; };
+		9283776552BA8CDBF34520C3 /* Pods-GolfTracker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GolfTracker-dummy.m"; sourceTree = "<group>"; };
+		9CB5CFA5694EF34EE0731398 /* PNScatterChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChart.m; path = PNChart/PNScatterChart.m; sourceTree = "<group>"; };
+		A35A36470A1E2F67C122255A /* PNChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNChart.h; path = PNChart/PNChart.h; sourceTree = "<group>"; };
+		A3B7ADAF0A77FBD72F6FA13A /* PNPieChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNPieChartDataItem.m; path = PNChart/PNPieChartDataItem.m; sourceTree = "<group>"; };
+		A4F02C9F5B465C186970466F /* Pods-GolfTracker-PNChart-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GolfTracker-PNChart-dummy.m"; sourceTree = "<group>"; };
+		BB2BD20EBE4B9E534B15AC76 /* Pods-GolfTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GolfTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		BD83E7BC0C8FE06111FF2C85 /* PNCircleChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNCircleChart.h; path = PNChart/PNCircleChart.h; sourceTree = "<group>"; };
+		C23206C29FB6646EFB8E4E33 /* libPods-GolfTracker-UICountingLabel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GolfTracker-UICountingLabel.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C23D3B6B754CC0E153A88A89 /* PNGenericChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNGenericChart.m; path = PNChart/PNGenericChart.m; sourceTree = "<group>"; };
+		CDE7FFE83E2486DDDBD65E99 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartDataItem.m; path = PNChart/PNScatterChartDataItem.m; sourceTree = "<group>"; };
+		D7D0DFC11A8323E8D41968DD /* PNPieChartDataItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNPieChartDataItem.h; path = PNChart/PNPieChartDataItem.h; sourceTree = "<group>"; };
+		D830E8F68A4E5633049C0BB9 /* Pods-GolfTracker-PNChart-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GolfTracker-PNChart-prefix.pch"; sourceTree = "<group>"; };
+		D968821F3E7ABC65E80CEE8E /* Pods-GolfTracker-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GolfTracker-environment.h"; sourceTree = "<group>"; };
+		D98BF183832DC35504C32B14 /* UICountingLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
+		DCCF833D127FC0AE9648682E /* PNScatterChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartData.m; path = PNChart/PNScatterChartData.m; sourceTree = "<group>"; };
+		E2BBF5BA57AB7095D20DF064 /* libPods-GolfTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GolfTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E800E347C915E532F1511AF8 /* Pods-GolfTracker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GolfTracker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F0534A6D87A9FC44B5738568 /* PNCircleChart.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNCircleChart.m; path = PNChart/PNCircleChart.m; sourceTree = "<group>"; };
+		F2A36D223EDDF8336DE53A7B /* PNBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNBar.m; path = PNChart/PNBar.m; sourceTree = "<group>"; };
+		F2DED0754739FB2BB81C9D09 /* PNBarChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNBarChart.h; path = PNChart/PNBarChart.h; sourceTree = "<group>"; };
+		F59A9BCC23F6506EA2E7DF07 /* PNLineChartData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartData.m; path = PNChart/PNLineChartData.m; sourceTree = "<group>"; };
+		F9D539EEAFA765981767B23F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		FA30D5F17787DFC0744E672E /* PNLineChartDataItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PNLineChartDataItem.m; path = PNChart/PNLineChartDataItem.m; sourceTree = "<group>"; };
+		FF0C3DE2905B3462C35711B1 /* libPods-GolfTracker-PNChart.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GolfTracker-PNChart.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF8CCA6985A1A40DBBC4B686 /* PNScatterChart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PNScatterChart.h; path = PNChart/PNScatterChart.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		38EEE719947001C270B55E87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91CEC4251FACF9789017E743 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8771B098131023F4D4CA2F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7BE647124E6130CE29AFC51 /* CoreGraphics.framework in Frameworks */,
+				0D297807D7B17BF6C853ECAE /* Foundation.framework in Frameworks */,
+				638351B3E059EF35718AB024 /* QuartzCore.framework in Frameworks */,
+				A53479191199E2F66D5938BC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F196629420E7BC4D68CBFEDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FEDED79F6DD744C544F33AC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01019F81BCD72A9CDF5242B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0742767F5915CA45697BE617 /* PNChart */,
+				976CF604CCB41944C21FBA1F /* UICountingLabel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0742767F5915CA45697BE617 /* PNChart */ = {
+			isa = PBXGroup;
+			children = (
+				049EC2E6D927C5FB15915EBB /* PNBar.h */,
+				F2A36D223EDDF8336DE53A7B /* PNBar.m */,
+				F2DED0754739FB2BB81C9D09 /* PNBarChart.h */,
+				6E72B0691487CF026E35AB6A /* PNBarChart.m */,
+				A35A36470A1E2F67C122255A /* PNChart.h */,
+				7C782B80BD930CDE7289BDFD /* PNChartDelegate.h */,
+				7E99794EF542890A8213478F /* PNChartLabel.h */,
+				0C2DFFDFFF7EF86752E7355D /* PNChartLabel.m */,
+				BD83E7BC0C8FE06111FF2C85 /* PNCircleChart.h */,
+				F0534A6D87A9FC44B5738568 /* PNCircleChart.m */,
+				2088EDB7D528175E4FF7D490 /* PNColor.h */,
+				90A0A1AF96DCE118BB29B5CC /* PNColor.m */,
+				3AA3C08C8C2F14B0817687F9 /* PNGenericChart.h */,
+				C23D3B6B754CC0E153A88A89 /* PNGenericChart.m */,
+				3E9E93168848644EF322E6C3 /* PNLineChart.h */,
+				53897B4664DC4AECF221ADF6 /* PNLineChart.m */,
+				8E0BB7582C251BDA3D7EFDE0 /* PNLineChartData.h */,
+				F59A9BCC23F6506EA2E7DF07 /* PNLineChartData.m */,
+				0C83ABF0E7025DC2A8E08436 /* PNLineChartDataItem.h */,
+				FA30D5F17787DFC0744E672E /* PNLineChartDataItem.m */,
+				13C0D8872931540608900DD3 /* PNPieChart.h */,
+				58D64D7111C7B3D84D19CC39 /* PNPieChart.m */,
+				D7D0DFC11A8323E8D41968DD /* PNPieChartDataItem.h */,
+				A3B7ADAF0A77FBD72F6FA13A /* PNPieChartDataItem.m */,
+				FF8CCA6985A1A40DBBC4B686 /* PNScatterChart.h */,
+				9CB5CFA5694EF34EE0731398 /* PNScatterChart.m */,
+				5268D5D5E618F1F10A5AC9A4 /* PNScatterChartData.h */,
+				DCCF833D127FC0AE9648682E /* PNScatterChartData.m */,
+				27D6D6C51926F916B0CB5E20 /* PNScatterChartDataItem.h */,
+				CDE7FFE83E2486DDDBD65E99 /* PNScatterChartDataItem.m */,
+				DD689DBA20BD5BB39A774139 /* Support Files */,
+			);
+			path = PNChart;
+			sourceTree = "<group>";
+		};
+		15D2870658D62FD701E2B034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C285B8EF03DF8D51A4D2F8C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E9F6342A03CFE38222A8173 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB5DA8BBF3B9A7D2311EB9 /* Pods-GolfTracker */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3C285B8EF03DF8D51A4D2F8C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F9D539EEAFA765981767B23F /* CoreGraphics.framework */,
+				74B55E85F40D4B593B287852 /* Foundation.framework */,
+				785A4BF4E6BBD03117A86A79 /* QuartzCore.framework */,
+				5BCC912AFC7C38C1BF6D65F5 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		49BA3451C8B6F48220A1D85F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2BBF5BA57AB7095D20DF064 /* libPods-GolfTracker.a */,
+				FF0C3DE2905B3462C35711B1 /* libPods-GolfTracker-PNChart.a */,
+				C23206C29FB6646EFB8E4E33 /* libPods-GolfTracker-UICountingLabel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		520EC2040493C26BD1B8E92F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				15106D30687CFA8D031E6EC3 /* Pods-GolfTracker-UICountingLabel.xcconfig */,
+				29C96534A311EB0D925AA28A /* Pods-GolfTracker-UICountingLabel-Private.xcconfig */,
+				1D5E1BD8A0AD8FD4C7F20C97 /* Pods-GolfTracker-UICountingLabel-dummy.m */,
+				22613D987A8790EA54AF6721 /* Pods-GolfTracker-UICountingLabel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-GolfTracker-UICountingLabel";
+			sourceTree = "<group>";
+		};
+		976CF604CCB41944C21FBA1F /* UICountingLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D98BF183832DC35504C32B14 /* UICountingLabel.h */,
+				8D895E3F234B029DAD8B2F7C /* UICountingLabel.m */,
+				520EC2040493C26BD1B8E92F /* Support Files */,
+			);
+			path = UICountingLabel;
+			sourceTree = "<group>";
+		};
+		D03FFDB8B06DAD1C8301C5B8 = {
+			isa = PBXGroup;
+			children = (
+				71EC19390616E800D9A4DC2A /* Podfile */,
+				15D2870658D62FD701E2B034 /* Frameworks */,
+				01019F81BCD72A9CDF5242B3 /* Pods */,
+				49BA3451C8B6F48220A1D85F /* Products */,
+				1E9F6342A03CFE38222A8173 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		DD689DBA20BD5BB39A774139 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2428C7ABF4E5F4B3A877E590 /* Pods-GolfTracker-PNChart.xcconfig */,
+				4D6A49F7F4BCB570E929FB9B /* Pods-GolfTracker-PNChart-Private.xcconfig */,
+				A4F02C9F5B465C186970466F /* Pods-GolfTracker-PNChart-dummy.m */,
+				D830E8F68A4E5633049C0BB9 /* Pods-GolfTracker-PNChart-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-GolfTracker-PNChart";
+			sourceTree = "<group>";
+		};
+		F1BB5DA8BBF3B9A7D2311EB9 /* Pods-GolfTracker */ = {
+			isa = PBXGroup;
+			children = (
+				E800E347C915E532F1511AF8 /* Pods-GolfTracker-acknowledgements.markdown */,
+				07AF6D7EDA783919FBB6257F /* Pods-GolfTracker-acknowledgements.plist */,
+				9283776552BA8CDBF34520C3 /* Pods-GolfTracker-dummy.m */,
+				D968821F3E7ABC65E80CEE8E /* Pods-GolfTracker-environment.h */,
+				4AB185B245ED95CF707916ED /* Pods-GolfTracker-resources.sh */,
+				BB2BD20EBE4B9E534B15AC76 /* Pods-GolfTracker.debug.xcconfig */,
+				85B8B5D287A8EE74756C1559 /* Pods-GolfTracker.release.xcconfig */,
+			);
+			name = "Pods-GolfTracker";
+			path = "Target Support Files/Pods-GolfTracker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		34B67800EDBF5E369CDA2E56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1540C6F1B61253319CBF6213 /* PNBar.h in Headers */,
+				27137042C68020D0F3092D31 /* PNBarChart.h in Headers */,
+				7733EE838D5D8A1AED7A4768 /* PNChart.h in Headers */,
+				8111E0798DF6748A2D61D66E /* PNChartDelegate.h in Headers */,
+				7ECAB2A5FBBBBAC68686AF96 /* PNChartLabel.h in Headers */,
+				5781C0ED667F3D52441F29ED /* PNCircleChart.h in Headers */,
+				049F30E17E83589CF47E2005 /* PNColor.h in Headers */,
+				39D807E8A3E5BFC1B506D0C7 /* PNGenericChart.h in Headers */,
+				29C8EE51E6728436FBE00AE1 /* PNLineChart.h in Headers */,
+				D2C779C34160BDD8176DBE7C /* PNLineChartData.h in Headers */,
+				3137B9AF69FBF364414F91BE /* PNLineChartDataItem.h in Headers */,
+				253C387FDADA3254609CA53F /* PNPieChart.h in Headers */,
+				B7AEE146785D80A6B66F298F /* PNPieChartDataItem.h in Headers */,
+				ADFD15E4F7586892E9A45F96 /* PNScatterChart.h in Headers */,
+				0626E57099039D20F22F2FAD /* PNScatterChartData.h in Headers */,
+				D7C41DCF2FCF3B1DA06094A4 /* PNScatterChartDataItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBBCA03F9747B878FECFB1BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2920BE011AE6124614608629 /* UICountingLabel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7BC4311D676B87BF70CBDCDC /* Pods-GolfTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D344CC9CEA12F5FC8C5950C1 /* Build configuration list for PBXNativeTarget "Pods-GolfTracker" */;
+			buildPhases = (
+				336363B5F3F218ABA80E85E4 /* Sources */,
+				F196629420E7BC4D68CBFEDB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4448A4C821492D7876C60E6 /* PBXTargetDependency */,
+				CCA063B81B1D43481DF44081 /* PBXTargetDependency */,
+			);
+			name = "Pods-GolfTracker";
+			productName = "Pods-GolfTracker";
+			productReference = E2BBF5BA57AB7095D20DF064 /* libPods-GolfTracker.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9C56CCAD80F57A34186E41F9 /* Pods-GolfTracker-PNChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95192C6884506336CC9B34D6 /* Build configuration list for PBXNativeTarget "Pods-GolfTracker-PNChart" */;
+			buildPhases = (
+				A34030F666609C64BF870BBD /* Sources */,
+				8771B098131023F4D4CA2F7E /* Frameworks */,
+				34B67800EDBF5E369CDA2E56 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54C76AC0C04CDAA2DADA9003 /* PBXTargetDependency */,
+			);
+			name = "Pods-GolfTracker-PNChart";
+			productName = "Pods-GolfTracker-PNChart";
+			productReference = FF0C3DE2905B3462C35711B1 /* libPods-GolfTracker-PNChart.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A7935DAB75674D672369FF3B /* Pods-GolfTracker-UICountingLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD1C561EA5D43B8F6DDA0DA9 /* Build configuration list for PBXNativeTarget "Pods-GolfTracker-UICountingLabel" */;
+			buildPhases = (
+				2810B3F0B08AA311F9FBC462 /* Sources */,
+				38EEE719947001C270B55E87 /* Frameworks */,
+				CBBCA03F9747B878FECFB1BA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-GolfTracker-UICountingLabel";
+			productName = "Pods-GolfTracker-UICountingLabel";
+			productReference = C23206C29FB6646EFB8E4E33 /* libPods-GolfTracker-UICountingLabel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0EF87D81FD9F1683ED3A7286 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 4527FCB8C9A752FABF7D7BED /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D03FFDB8B06DAD1C8301C5B8;
+			productRefGroup = 49BA3451C8B6F48220A1D85F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BC4311D676B87BF70CBDCDC /* Pods-GolfTracker */,
+				9C56CCAD80F57A34186E41F9 /* Pods-GolfTracker-PNChart */,
+				A7935DAB75674D672369FF3B /* Pods-GolfTracker-UICountingLabel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2810B3F0B08AA311F9FBC462 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				249FB07E42F6E3CDB5C9BD89 /* Pods-GolfTracker-UICountingLabel-dummy.m in Sources */,
+				725E8C90C663A41ACDC6608F /* UICountingLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		336363B5F3F218ABA80E85E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B8002F180A0824A6EB83F42 /* Pods-GolfTracker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34030F666609C64BF870BBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45BCEE5401086D4139D920C6 /* PNBar.m in Sources */,
+				392F950540B5EAB34580C98E /* PNBarChart.m in Sources */,
+				515E84CE9E7889F149045EAE /* PNChartLabel.m in Sources */,
+				815C143B223A7E8B94C8A43B /* PNCircleChart.m in Sources */,
+				F89D029D19D3516674C6776D /* PNColor.m in Sources */,
+				CAD18CBA14294ACB29ED9B34 /* PNGenericChart.m in Sources */,
+				91B80FB73C06618133D8221F /* PNLineChart.m in Sources */,
+				B0EB7010C5F1135AB247D6BC /* PNLineChartData.m in Sources */,
+				03EDB406D342F0D403725A11 /* PNLineChartDataItem.m in Sources */,
+				2B769619B4555259F9F4CFA7 /* PNPieChart.m in Sources */,
+				ED2A4E41C9465AE5988EDC8C /* PNPieChartDataItem.m in Sources */,
+				B2B8E1F9ADE18B86ED481190 /* PNScatterChart.m in Sources */,
+				94C63E97E7F85BEE169355E2 /* PNScatterChartData.m in Sources */,
+				517E213D761B5F98575CF8CE /* PNScatterChartDataItem.m in Sources */,
+				92980CC136211ECB3AAC7B99 /* Pods-GolfTracker-PNChart-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54C76AC0C04CDAA2DADA9003 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GolfTracker-UICountingLabel";
+			target = A7935DAB75674D672369FF3B /* Pods-GolfTracker-UICountingLabel */;
+			targetProxy = 2B5C19934B6EAD24A05FD7A2 /* PBXContainerItemProxy */;
+		};
+		CCA063B81B1D43481DF44081 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GolfTracker-UICountingLabel";
+			target = A7935DAB75674D672369FF3B /* Pods-GolfTracker-UICountingLabel */;
+			targetProxy = 7D3F8124BEC52035417A4B98 /* PBXContainerItemProxy */;
+		};
+		E4448A4C821492D7876C60E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-GolfTracker-PNChart";
+			target = 9C56CCAD80F57A34186E41F9 /* Pods-GolfTracker-PNChart */;
+			targetProxy = 80EF944CBBE5F29547D8AB41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		21227322003A564A43CBF086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C96534A311EB0D925AA28A /* Pods-GolfTracker-UICountingLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GolfTracker-UICountingLabel/Pods-GolfTracker-UICountingLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3246B2E4A4C79499BD3A431F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6A49F7F4BCB570E929FB9B /* Pods-GolfTracker-PNChart-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GolfTracker-PNChart/Pods-GolfTracker-PNChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		44395231DC66D0A606B83C5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6894B5AF27D350F00088FDCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85B8B5D287A8EE74756C1559 /* Pods-GolfTracker.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		766FEA259DCFD5742D43FCC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C96534A311EB0D925AA28A /* Pods-GolfTracker-UICountingLabel-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GolfTracker-UICountingLabel/Pods-GolfTracker-UICountingLabel-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A0CF76AE7CCAB0C989E26035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2BD20EBE4B9E534B15AC76 /* Pods-GolfTracker.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A87A6A603B4546A40FA73FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D4C0981DAE99C9DAE9667B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6A49F7F4BCB570E929FB9B /* Pods-GolfTracker-PNChart-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-GolfTracker-PNChart/Pods-GolfTracker-PNChart-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4527FCB8C9A752FABF7D7BED /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A87A6A603B4546A40FA73FDE /* Debug */,
+				44395231DC66D0A606B83C5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95192C6884506336CC9B34D6 /* Build configuration list for PBXNativeTarget "Pods-GolfTracker-PNChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3246B2E4A4C79499BD3A431F /* Debug */,
+				D4C0981DAE99C9DAE9667B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D344CC9CEA12F5FC8C5950C1 /* Build configuration list for PBXNativeTarget "Pods-GolfTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0CF76AE7CCAB0C989E26035 /* Debug */,
+				6894B5AF27D350F00088FDCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD1C561EA5D43B8F6DDA0DA9 /* Build configuration list for PBXNativeTarget "Pods-GolfTracker-UICountingLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				766FEA259DCFD5742D43FCC1 /* Debug */,
+				21227322003A564A43CBF086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0EF87D81FD9F1683ED3A7286 /* Project object */;
+}

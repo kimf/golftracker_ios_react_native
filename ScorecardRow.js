@@ -8,6 +8,8 @@ var {
   View,
 } = React;
 
+var CircleChart = require('./CircleChart');
+
 var ScorecardRow = React.createClass({
   underlayColor: function() {
     return '#f2f2f2';
@@ -24,7 +26,10 @@ var ScorecardRow = React.createClass({
           <View style={styles.data_row}>
             <Text style={styles.strokes}>{this.props.scorecard.strokes}</Text>
             <Text style={styles.score}>{this.props.scorecard.strokes_over_par}</Text>
+
             <Text style={styles.gir}><Text style={styles.label}>GIR:</Text> {this.getGirPercentage(this.props.scorecard) + '%'}</Text>
+            <CircleChart style={styles.circle_chart}/>
+
             <Text style={styles.fir}><Text style={styles.label}>FIR:</Text> {this.getFirPercentage(this.props.scorecard) + '%'}</Text>
             <Text style={styles.putts}><Text style={styles.label}>PUTTS:</Text> {this.props.scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
           </View>
@@ -97,6 +102,11 @@ var styles = StyleSheet.create({
   },
   fir: {
     fontSize: 14,
+    flex: 1
+  },
+  circle_chart: {
+    height: 25,
+    width: 25,
     flex: 1
   }
 });

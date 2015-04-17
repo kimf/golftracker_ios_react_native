@@ -1,5 +1,7 @@
 #import <PNChart/PNCircleChart.h>
-#import "RCTView.h"
 
 @interface KFCircleChart : PNCircleChart
+
+@property (nonatomic) NSNumber* currentValue;
+
 @end

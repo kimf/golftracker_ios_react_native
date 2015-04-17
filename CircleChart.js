@@ -2,21 +2,12 @@
 
 var KFCircleChart = require('NativeModules').KFCircleChart;
 var React = require('React');
-var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
 var StyleSheet = require('StyleSheet');
-var StyleSheetPropType = require('StyleSheetPropType');
-var View = require('View');
-var ViewStylePropTypes = require('ViewStylePropTypes');
 
 var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
-var PropTypes = React.PropTypes;
 
 
 var CircleChart = React.createClass({
-  propTypes: {
-    style: StyleSheetPropType(ViewStylePropTypes),
-  },
-
 
   render: function() {
     var props = {
@@ -36,12 +27,8 @@ var styles = StyleSheet.create({
   },
 });
 
-var validAttributes = {
-  ...ReactIOSViewAttributes.UIView,
-};
-
 var KFCircleChart = createReactIOSNativeComponentClass({
-  validAttributes: validAttributes,
+  validAttributes: {current: true},
   uiViewClassName: 'KFCircleChart',
 });
 

@@ -28,7 +28,7 @@ var ScorecardRow = React.createClass({
             <Text style={styles.score}>{this.props.scorecard.strokes_over_par}</Text>
 
             <Text style={styles.gir}><Text style={styles.label}>GIR:</Text> {this.getGirPercentage(this.props.scorecard) + '%'}</Text>
-            <CircleChart style={styles.circle_chart}/>
+            <CircleChart style={styles.circle_chart} currentValue={this.getGirPercentage}/>
 
             <Text style={styles.fir}><Text style={styles.label}>FIR:</Text> {this.getFirPercentage(this.props.scorecard) + '%'}</Text>
             <Text style={styles.putts}><Text style={styles.label}>PUTTS:</Text> {this.props.scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
@@ -101,13 +101,12 @@ var styles = StyleSheet.create({
     alignItems: 'flex-start'
   },
   fir: {
-    fontSize: 14,
+    fontSize: 18,
     flex: 1
   },
   circle_chart: {
-    height: 25,
-    width: 25,
-    flex: 1
+    height: 10,
+    flex: 2
   }
 });
 

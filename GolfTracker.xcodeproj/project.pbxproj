@@ -23,6 +23,8 @@
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		79822602454C054A525B5973 /* libPods-GolfTracker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CD282BB724C4EC6064B09478 /* libPods-GolfTracker.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		976C87A21AE13B3600D5012E /* KFCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 976C879F1AE13B3600D5012E /* KFCircleChart.m */; };
+		976C87A31AE13B3600D5012E /* KFCircleChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 976C87A11AE13B3600D5012E /* KFCircleChartManager.m */; };
 		97A4FE1E1AE001C000E67B51 /* PNBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE011AE001BF00E67B51 /* PNBar.m */; };
 		97A4FE1F1AE001C000E67B51 /* PNBarChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE031AE001BF00E67B51 /* PNBarChart.m */; };
 		97A4FE201AE001C000E67B51 /* PNChartLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE071AE001BF00E67B51 /* PNChartLabel.m */; };
@@ -38,8 +40,6 @@
 		97A4FE2A1AE001C000E67B51 /* PNScatterChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE1B1AE001C000E67B51 /* PNScatterChartData.m */; };
 		97A4FE2B1AE001C000E67B51 /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE1D1AE001C000E67B51 /* PNScatterChartDataItem.m */; };
 		97A4FE2E1AE001D300E67B51 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE2D1AE001D300E67B51 /* UICountingLabel.m */; };
-		97A4FE331AE0441A00E67B51 /* KFCircleChart.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE301AE0441A00E67B51 /* KFCircleChart.m */; };
-		97A4FE341AE0441A00E67B51 /* KFCircleChartManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A4FE321AE0441A00E67B51 /* KFCircleChartManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +135,10 @@
 		62380656E75E1A77F8E0BFC3 /* Pods-GolfTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolfTracker/Pods-GolfTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		976C879E1AE13B3600D5012E /* KFCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFCircleChart.h; path = iOS/Modules/KFCircleChart.h; sourceTree = "<group>"; };
+		976C879F1AE13B3600D5012E /* KFCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFCircleChart.m; path = iOS/Modules/KFCircleChart.m; sourceTree = "<group>"; };
+		976C87A01AE13B3600D5012E /* KFCircleChartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFCircleChartManager.h; path = iOS/Modules/KFCircleChartManager.h; sourceTree = "<group>"; };
+		976C87A11AE13B3600D5012E /* KFCircleChartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFCircleChartManager.m; path = iOS/Modules/KFCircleChartManager.m; sourceTree = "<group>"; };
 		97A4FE001AE001BF00E67B51 /* PNBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNBar.h; path = Pods/PNChart/PNChart/PNBar.h; sourceTree = "<group>"; };
 		97A4FE011AE001BF00E67B51 /* PNBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNBar.m; path = Pods/PNChart/PNChart/PNBar.m; sourceTree = "<group>"; };
 		97A4FE021AE001BF00E67B51 /* PNBarChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PNBarChart.h; path = Pods/PNChart/PNChart/PNBarChart.h; sourceTree = "<group>"; };
@@ -167,10 +171,6 @@
 		97A4FE1D1AE001C000E67B51 /* PNScatterChartDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PNScatterChartDataItem.m; path = Pods/PNChart/PNChart/PNScatterChartDataItem.m; sourceTree = "<group>"; };
 		97A4FE2C1AE001D300E67B51 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UICountingLabel.h; path = Pods/UICountingLabel/UICountingLabel.h; sourceTree = "<group>"; };
 		97A4FE2D1AE001D300E67B51 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UICountingLabel.m; path = Pods/UICountingLabel/UICountingLabel.m; sourceTree = "<group>"; };
-		97A4FE2F1AE0441A00E67B51 /* KFCircleChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFCircleChart.h; path = iOS/Modules/KFCircleChart.h; sourceTree = "<group>"; };
-		97A4FE301AE0441A00E67B51 /* KFCircleChart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFCircleChart.m; path = iOS/Modules/KFCircleChart.m; sourceTree = "<group>"; };
-		97A4FE311AE0441A00E67B51 /* KFCircleChartManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KFCircleChartManager.h; path = iOS/Modules/KFCircleChartManager.h; sourceTree = "<group>"; };
-		97A4FE321AE0441A00E67B51 /* KFCircleChartManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KFCircleChartManager.m; path = iOS/Modules/KFCircleChartManager.m; sourceTree = "<group>"; };
 		9CE1BEE07B9DCEB019C7E642 /* Pods-GolfTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolfTracker/Pods-GolfTracker.release.xcconfig"; sourceTree = "<group>"; };
 		CD282BB724C4EC6064B09478 /* libPods-GolfTracker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GolfTracker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -331,6 +331,10 @@
 				97A4FE071AE001BF00E67B51 /* PNChartLabel.m */,
 				97A4FE081AE001BF00E67B51 /* PNCircleChart.h */,
 				97A4FE091AE001BF00E67B51 /* PNCircleChart.m */,
+				976C879E1AE13B3600D5012E /* KFCircleChart.h */,
+				976C879F1AE13B3600D5012E /* KFCircleChart.m */,
+				976C87A01AE13B3600D5012E /* KFCircleChartManager.h */,
+				976C87A11AE13B3600D5012E /* KFCircleChartManager.m */,
 				97A4FE0A1AE001BF00E67B51 /* PNColor.h */,
 				97A4FE0B1AE001BF00E67B51 /* PNColor.m */,
 				97A4FE0C1AE001C000E67B51 /* PNGenericChart.h */,
@@ -342,10 +346,6 @@
 				97A4FE121AE001C000E67B51 /* PNLineChartDataItem.h */,
 				97A4FE131AE001C000E67B51 /* PNLineChartDataItem.m */,
 				97A4FE141AE001C000E67B51 /* PNPieChart.h */,
-				97A4FE2F1AE0441A00E67B51 /* KFCircleChart.h */,
-				97A4FE301AE0441A00E67B51 /* KFCircleChart.m */,
-				97A4FE311AE0441A00E67B51 /* KFCircleChartManager.h */,
-				97A4FE321AE0441A00E67B51 /* KFCircleChartManager.m */,
 				97A4FE151AE001C000E67B51 /* PNPieChart.m */,
 				97A4FE161AE001C000E67B51 /* PNPieChartDataItem.h */,
 				97A4FE171AE001C000E67B51 /* PNPieChartDataItem.m */,
@@ -609,11 +609,11 @@
 				97A4FE2A1AE001C000E67B51 /* PNScatterChartData.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				97A4FE251AE001C000E67B51 /* PNLineChartData.m in Sources */,
-				97A4FE341AE0441A00E67B51 /* KFCircleChartManager.m in Sources */,
+				976C87A31AE13B3600D5012E /* KFCircleChartManager.m in Sources */,
 				97A4FE211AE001C000E67B51 /* PNCircleChart.m in Sources */,
 				97A4FE231AE001C000E67B51 /* PNGenericChart.m in Sources */,
 				97A4FE1F1AE001C000E67B51 /* PNBarChart.m in Sources */,
-				97A4FE331AE0441A00E67B51 /* KFCircleChart.m in Sources */,
+				976C87A21AE13B3600D5012E /* KFCircleChart.m in Sources */,
 				97A4FE2B1AE001C000E67B51 /* PNScatterChartDataItem.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);

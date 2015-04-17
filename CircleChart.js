@@ -7,19 +7,19 @@ var StyleSheet = require('StyleSheet');
 var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
 
 
-var CircleChart = React.createClass({
+// var CircleChart = React.createClass({
 
-  render: function() {
-    var props = {
-      ...this.props,
-      style: ([styles.base, this.props.style]: ?Array<any>),
-    };
+//   render: function() {
+//     var props = {
+//       ...this.props,
+//       style: ([styles.base, this.props.style]: ?Array<any>),
+//     };
 
-    return (
-      <KFCircleChart {...props} />
-    );
-  }
-});
+//     return (
+//       <KFCircleChart {...props} />
+//     );
+//   }
+// });
 
 var styles = StyleSheet.create({
   base: {
@@ -27,8 +27,8 @@ var styles = StyleSheet.create({
   },
 });
 
-var KFCircleChart = createReactIOSNativeComponentClass({
-  validAttributes: {current: true},
+var CircleChart = createReactIOSNativeComponentClass({
+  validAttributes: {currentValue: true, total: true},
   uiViewClassName: 'KFCircleChart',
 });
 

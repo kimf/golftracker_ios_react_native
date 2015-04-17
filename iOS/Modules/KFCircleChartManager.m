@@ -6,14 +6,15 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_VIEW_PROPERTY(currentValue, NSNumber)
+RCT_EXPORT_VIEW_PROPERTY(currentValue, NSInteger)
+RCT_EXPORT_VIEW_PROPERTY(total, NSInteger)
 
 - (UIView *)view
 {
   KFCircleChart *circleChart;
-  
+
   circleChart = [[KFCircleChart alloc] initWithFrame:CGRectMake(0,0,30.0,30.0)
-                                                              total:[NSNumber numberWithInt:100]
+                                                              total:[NSNumber numberWithInt:80]
                                                             current:[NSNumber numberWithInt:37]
                                                           clockwise:YES
                                                              shadow:YES

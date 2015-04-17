@@ -2,10 +2,11 @@
 
 @implementation KFCircleChart
 
-- (void)setCurrentValue:(NSNumber*)currentValue
+- (void)setCurrentValue:(NSInteger)currentValue
 {
-    [self updateChartByCurrent:currentValue];
-    [self setNeedsDisplay];
+
+  //[anObject valueForKey: @"propertyName"];
+  [self updateChartByCurrent:[NSNumber numberWithInteger: currentValue]];
 }
 
 @end

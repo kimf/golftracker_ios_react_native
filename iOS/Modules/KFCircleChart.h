@@ -2,6 +2,6 @@
 
 @interface KFCircleChart : PNCircleChart
 
-@property (nonatomic) NSNumber* currentValue;
+@property (nonatomic) NSInteger currentValue;
 
 @end

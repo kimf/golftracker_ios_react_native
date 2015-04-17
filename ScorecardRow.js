@@ -16,22 +16,24 @@ var ScorecardRow = React.createClass({
   },
 
   render: function() {
+    var scorecard = this.props.scorecard;
     return (
       <TouchableHighlight underlayColor={this.underlayColor()} onPress={this.props.onSelect}>
         <View style={styles.wrapper}>
           <View style={styles.meta_header}>
-            <Text style={[styles.small_and_gray, styles.course]}>{this.props.scorecard.course}</Text>
-            <Text style={[styles.small_and_gray, styles.date]}>{this.props.scorecard.date}</Text>
+            <Text style={[styles.small_and_gray, styles.course]}>{scorecard.course}</Text>
+            <Text style={[styles.small_and_gray, styles.date]}>{scorecard.date}</Text>
           </View>
           <View style={styles.data_row}>
-            <Text style={styles.strokes}>{this.props.scorecard.strokes}</Text>
-            <Text style={styles.score}>{this.props.scorecard.strokes_over_par}</Text>
+            <Text style={styles.strokes}>{scorecard.strokes}</Text>
+            <Text style={styles.score}>{scorecard.strokes_over_par}</Text>
 
-            <Text style={styles.gir}><Text style={styles.label}>GIR:</Text> {this.getGirPercentage(this.props.scorecard) + '%'}</Text>
-            <CircleChart style={styles.circle_chart} currentValue={this.getGirPercentage}/>
+            <Text style={styles.gir}><Text style={styles.label}>GIR:</Text> {this.getGirPercentage(scorecard) + '%'}</Text>
+            <CircleChart style={styles.circle_chart} currentValue={scorecard.girs} total={scorecard.scores.length}/>
 
-            <Text style={styles.fir}><Text style={styles.label}>FIR:</Text> {this.getFirPercentage(this.props.scorecard) + '%'}</Text>
-            <Text style={styles.putts}><Text style={styles.label}>PUTTS:</Text> {this.props.scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
+            <Text style={styles.fir}><Text style={styles.label}>FIR:</Text> {this.getFirPercentage(scorecard) + '%'}</Text>
+            <CircleChart style={styles.circle_chart} currentValue={scorecard.firs} total={scorecard.not_par_three_holes}/>
+            <Text style={styles.putts}><Text style={styles.label}>PUTTS:</Text> {scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
           </View>
         </View>
       </TouchableHighlight>
@@ -39,11 +41,11 @@ var ScorecardRow = React.createClass({
   },
 
   getGirPercentage(scorecard){
-    var girs = (scorecard.girs / scorecard.scores.length) * 100
+    var girs = (scorecard.girs / scorecard.scores.length) * 100;
     return Math.round(girs);
   },
   getFirPercentage(scorecard){
-    var firs = (scorecard.firs / scorecard.not_par_three_holes) * 100
+    var firs = (scorecard.firs / scorecard.not_par_three_holes) * 100;
     return Math.round(firs);
   }
 })

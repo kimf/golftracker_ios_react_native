@@ -28,7 +28,7 @@ var styles = StyleSheet.create({
 });
 
 var CircleChart = createReactIOSNativeComponentClass({
-  validAttributes: {currentValue: true, total: true},
+  validAttributes: {currentValue: true, totalValue: true},
   uiViewClassName: 'KFCircleChart',
 });
 

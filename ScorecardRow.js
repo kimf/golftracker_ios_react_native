@@ -29,10 +29,10 @@ var ScorecardRow = React.createClass({
             <Text style={styles.score}>{scorecard.strokes_over_par}</Text>
 
             <Text style={styles.gir}><Text style={styles.label}>GIR:</Text> {this.getGirPercentage(scorecard) + '%'}</Text>
-            <CircleChart style={styles.circle_chart} currentValue={scorecard.girs} total={scorecard.scores.length}/>
+            <CircleChart style={styles.circle_chart} currentValue={scorecard.girs} totalValue={scorecard.scores.length} />
 
             <Text style={styles.fir}><Text style={styles.label}>FIR:</Text> {this.getFirPercentage(scorecard) + '%'}</Text>
-            <CircleChart style={styles.circle_chart} currentValue={scorecard.firs} total={scorecard.not_par_three_holes}/>
+            <CircleChart style={styles.circle_chart} currentValue={scorecard.firs} totalValue={scorecard.not_par_three_holes} />
             <Text style={styles.putts}><Text style={styles.label}>PUTTS:</Text> {scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
           </View>
         </View>

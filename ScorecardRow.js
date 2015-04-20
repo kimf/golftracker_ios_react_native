@@ -107,8 +107,7 @@ var styles = StyleSheet.create({
     flex: 1
   },
   circle_chart: {
-    height: 10,
-    flex: 2
+    flex: 1
   }
 });
 

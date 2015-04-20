@@ -11,7 +11,8 @@ typedef NS_ENUM (NSUInteger, PNChartFormatType) {
 
 @interface KFCircleChart : UIView
 
-- (id)init;
+//- (id)init;
+- (id)initWithFrame:(CGRect)frame;
 
 @property (nonatomic) UIColor *strokeColor;
 @property (nonatomic) UIColor *strokeColorGradientStart;

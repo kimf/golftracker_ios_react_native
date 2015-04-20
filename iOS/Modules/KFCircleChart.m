@@ -1,13 +1,24 @@
 #import "KFCircleChart.h"
 
+//#import "RCTUtils.h"
+#import "UIView+React.h"
+
 @interface KFCircleChart ()
 @end
 
 @implementation KFCircleChart
 
-- (id)init {
-  NSLog(@"initing");
-  return [super initWithFrame:CGRectMake(0, 0, 60, 60)];
+//- (id)init {
+//  NSLog(@"initing");
+//  return [super initWithFrame:CGRectMake(0,0,30,30)];
+//}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+  self = [super initWithFrame:frame];
+  NSLog(@"My view frame: %@", NSStringFromCGRect(frame));
+
+  return self;
 }
 
 - (void)setCurrentValue:(NSInteger)currentValue {
@@ -26,10 +37,7 @@
 - (id)redraw {
 
   if((_total != nil) && (_current != nil) && (self)) {
-    NSLog(@"TIME TO REDRAW WITH:");
-//    NSLog(@"total %ld", _total);
-//    NSLog(@"current %ld", _current);
-
+    NSLog(@"--- REDRAWING ----");
 
     _strokeColor = PNFreshGreen;
     _duration = 1.0;

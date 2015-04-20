@@ -1,35 +1,48 @@
 'use strict';
 
-var KFCircleChart = require('NativeModules').KFCircleChart;
+var NativeMethodsMixin = require('NativeMethodsMixin');
 var React = require('React');
-var StyleSheet = require('StyleSheet');
+var ReactIOSViewAttributes = require('ReactIOSViewAttributes');
+var StyleSheetPropType = require('StyleSheetPropType');
 
 var createReactIOSNativeComponentClass = require('createReactIOSNativeComponentClass');
+var merge = require('merge');
+
+var stylePropType = StyleSheetPropType();
+
+var viewConfig = {
+  validAttributes: merge(ReactIOSViewAttributes.UIView, {
+    currentValue: true,
+    totalValue: true,
+  }),
+  uiViewClassName: 'KFCircleChart',
+};
 
 
-// var CircleChart = React.createClass({
+var CircleChart = React.createClass({
 
-//   render: function() {
-//     var props = {
-//       ...this.props,
-//       style: ([styles.base, this.props.style]: ?Array<any>),
-//     };
+  mixins: [NativeMethodsMixin],
 
-//     return (
-//       <KFCircleChart {...props} />
-//     );
-//   }
-// });
+  propTypes: {
+    currentValue: React.PropTypes.number,
+    totalValue: React.PropTypes.number,
+    style: stylePropType,
+    testID: React.PropTypes.string,
+  },
 
-var styles = StyleSheet.create({
-  base: {
-    flex: 1,
+  viewConfig: viewConfig,
+
+  render: function() {
+    var props = {};
+    for (var key in this.props) {
+      props[key] = this.props[key];
+    }
+    props.ref = this.getNodeHandle();
+
+    return <KFCircleChart {...props} />;
   },
 });
 
-var CircleChart = createReactIOSNativeComponentClass({
-  validAttributes: {currentValue: true, totalValue: true},
-  uiViewClassName: 'KFCircleChart',
-});
+var KFCircleChart = createReactIOSNativeComponentClass(viewConfig);
 
 module.exports = CircleChart;

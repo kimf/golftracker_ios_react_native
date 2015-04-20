@@ -6,15 +6,15 @@
 
 RCT_EXPORT_MODULE()
 
-RCT_EXPORT_VIEW_PROPERTY(currentValue, NSInteger)
-RCT_EXPORT_VIEW_PROPERTY(totalValue, NSInteger)
-
 - (UIView *)view
 {
-  KFCircleChart *circleChart;
-  circleChart = [[KFCircleChart alloc] init];
-  return circleChart;
+  return [[KFCircleChart alloc] init];
 }
+
+#pragma mark - View properties
+
+RCT_EXPORT_VIEW_PROPERTY(currentValue, NSInteger)
+RCT_EXPORT_VIEW_PROPERTY(totalValue, NSInteger)
 
 
 @end

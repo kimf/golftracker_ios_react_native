@@ -12,7 +12,7 @@ var CircleChart = require('./CircleChart');
 
 var ScorecardRow = React.createClass({
   underlayColor: function() {
-    return '#f2f2f2';
+    return '#ffeebb';
   },
 
   render: function() {
@@ -26,14 +26,24 @@ var ScorecardRow = React.createClass({
           </View>
           <View style={styles.data_row}>
             <Text style={styles.strokes}>{scorecard.strokes}</Text>
-            <Text style={styles.score}>{scorecard.strokes_over_par}</Text>
+            <Text style={styles.score}>{this.strokesOverParString(scorecard)}{scorecard.strokes_over_par}</Text>
 
-            <Text style={styles.gir}><Text style={styles.label}>GIR:</Text> {this.getGirPercentage(scorecard) + '%'}</Text>
-            <CircleChart style={styles.circle_chart} currentValue={scorecard.girs} totalValue={scorecard.scores.length} />
+            <View style={styles.gir}>
+              <Text style={styles.label}>GIR:</Text>
+              <CircleChart style={styles.circle_chart} currentValue={scorecard.girs} totalValue={scorecard.scores.length} />
+              <Text style={styles.value}>{this.getGirPercentage(scorecard) + '%'}</Text>
+            </View>
 
-            <Text style={styles.fir}><Text style={styles.label}>FIR:</Text> {this.getFirPercentage(scorecard) + '%'}</Text>
-            <CircleChart style={styles.circle_chart} currentValue={scorecard.firs} totalValue={scorecard.not_par_three_holes} />
-            <Text style={styles.putts}><Text style={styles.label}>PUTTS:</Text> {scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
+            <View style={styles.gir}>
+              <Text style={styles.label}>FIR:</Text>
+              <CircleChart style={styles.circle_chart} currentValue={scorecard.firs} totalValue={scorecard.not_par_three_holes} />
+              <Text style={styles.value}> {this.getFirPercentage(scorecard) + '%'}</Text>
+            </View>
+
+            <View style={styles.putts}>
+              <Text style={styles.label}>PUTTS:</Text>
+              <Text style={styles.putt_value}>{scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
+            </View>
           </View>
         </View>
       </TouchableHighlight>
@@ -47,19 +57,29 @@ var ScorecardRow = React.createClass({
   getFirPercentage(scorecard){
     var firs = (scorecard.firs / scorecard.not_par_three_holes) * 100;
     return Math.round(firs);
+  },
+  strokesOverParString(scorecard){
+    var par = scorecard.par;
+    if( scorecard.strokes == par ){
+      return "";
+    } else if (scorecard.strokes > par) {
+      return "+";
+    } else if (scorecard.strokes < par) {
+      return "-";
+    }
   }
 })
 
 var styles = StyleSheet.create({
   wrapper: {
     padding: 10,
-    margin: 10,
-    marginBottom: 0,
+    marginBottom: 5,
     backgroundColor: '#F5F5F5',
   },
   meta_header: {
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
+    height: 20,
   },
   course: {
     textAlign: 'left'
@@ -75,39 +95,53 @@ var styles = StyleSheet.create({
   },
   label: {
     fontSize: 8,
-    fontWeight: '600',
     color: '#777777',
     flex: 1
   },
   data_row: {
+    height: 60,
     flexDirection: 'row',
     alignItems: 'center',
   },
   strokes: {
-    fontSize: 30,
+    fontSize: 32,
     fontWeight: 'bold',
     flex: 1
   },
   score: {
-    fontSize: 18,
+    fontSize: 14,
     flex: 1
   },
   putts: {
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    height: 60,
+    width: 100,
     fontSize: 14,
     flex: 1
   },
   gir: {
+    height: 50,
+    width: 100,
     fontSize: 14,
     flex: 1,
     flexDirection: 'column',
-    alignItems: 'flex-start'
+    alignItems: 'stretch',
+    textAlign: 'center'
   },
-  fir: {
-    fontSize: 18,
+  value: {
+    fontSize: 12,
     flex: 1
   },
   circle_chart: {
-    flex: 1
+    flex: 1,
+    height: 25,
+    width: 25,
+    marginBottom: 3,
+    marginTop: 3
+  },
+  putt_value: {
+    flex: 2
   }
 });
 

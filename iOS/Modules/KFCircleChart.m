@@ -8,17 +8,9 @@
 
 @implementation KFCircleChart
 
-//- (id)init {
-//  NSLog(@"initing");
-//  return [super initWithFrame:CGRectMake(0,0,30,30)];
-//}
-
-- (instancetype)initWithFrame:(CGRect)frame
-{
-  self = [super initWithFrame:frame];
-  NSLog(@"My view frame: %@", NSStringFromCGRect(frame));
-
-  return self;
+- (id)init {
+  NSLog(@"initing");
+  return [super initWithFrame:CGRectMake(0,0,30,30)];
 }
 
 - (void)setCurrentValue:(NSInteger)currentValue {
@@ -40,9 +32,8 @@
     NSLog(@"--- REDRAWING ----");
 
     _strokeColor = PNFreshGreen;
-    _duration = 1.0;
-    _chartType = PNChartFormatTypePercent;
-    _lineWidth = @7.0f;
+    _duration = 0.5;
+    _lineWidth = @8.0f;
 
     CGFloat startAngle = 270.0f;
     CGFloat endAngle = 270.01f;
@@ -55,14 +46,14 @@
 
     _circle               = [CAShapeLayer layer];
     _circle.path          = circlePath.CGPath;
-    _circle.lineCap       = kCALineCapRound;
+    _circle.lineCap       = kCALineCapButt;
     _circle.fillColor     = [UIColor clearColor].CGColor;
     _circle.lineWidth     = [_lineWidth floatValue];
     _circle.zPosition     = 1;
 
     _circleBackground             = [CAShapeLayer layer];
     _circleBackground.path        = circlePath.CGPath;
-    _circleBackground.lineCap     = kCALineCapRound;
+    _circleBackground.lineCap     = kCALineCapButt;
     _circleBackground.fillColor   = [UIColor clearColor].CGColor;
     _circleBackground.lineWidth   = [_lineWidth floatValue];
     _circleBackground.strokeColor = PNRed.CGColor;

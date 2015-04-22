@@ -9,7 +9,7 @@ var LoadingScreen = require('./LoadingScreen');
 var ScorecardScreen = require('./ScorecardScreen');
 var ScorecardRow = require('./ScorecardRow');
 
-var REQUEST_URL = 'http://localhost:9292/scorecards?year=2014';
+var REQUEST_URL = 'http://golfstats.fransman.se/scorecards?year=2014';
 
 var ScorecardsScreen = React.createClass({
   getInitialState: function() {

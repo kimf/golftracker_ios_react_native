@@ -2,9 +2,9 @@
 
 var React = require('react-native');
 
-var { Component, StyleSheet, View, PropType } = React;
+var { StyleSheet, View, PropType } = React;
 
-class SquareChart extends Component {
+class SquareChart extends View {
 
   constructor(props, context) {
     super(props, context);
@@ -39,11 +39,11 @@ class SquareChart extends Component {
       } else {
         var square_style = styles.failure;
       }
-      squares.push(<View ref='view' style={[square_style, styles.square]} />);
+      squares.push(<View ref={'squareChart'+fi} style={[square_style, styles.square]} />);
     }
 
     return (
-      <View ref='view' style={styles.container}>
+      <View ref='squarechart' style={styles.container}>
         {squares}
       </View>
     );

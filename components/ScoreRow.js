@@ -2,9 +2,12 @@
 
 var React = require('react-native');
 
-var { Component, StyleSheet, View, PropType } = React;
+var { StyleSheet, View, PropType } = React;
 
-class SquareRow extends Component {
+var SCOREHEIGHT = 20;
+//var SCORECOLORS = {'-2': '#B0A606', '-1': '#945816', '0': '#D6DCDF', '1': '#A398C5', '2': '#68617F', '3': '#4B4B4B', '4': '#222', '5': '#000'};
+
+class SquareRow extends View {
 
   constructor(props, context) {
     super(props, context);
@@ -34,7 +37,9 @@ class SquareRow extends Component {
     function pushBar(element, index, array){
       console.log(element);
       var barStyle = {
-        height: 20 + (element * 10)
+        height: SCOREHEIGHT + (element * 10),
+        backgroundColor: '#D6DCDF'
+        // backgroundColor: SCORECOLORS[element.toString()]
       };
 
       bars.push(<View ref='view' style={[barStyle, styles.bar]} />);
@@ -42,33 +47,35 @@ class SquareRow extends Component {
 
     return (
       <View>
-        <View ref='view' style={styles.container}>
+        <View ref='view' style={[this.props.wrapper_style, styles.score_row_wrapper]}>
           {bars}
         </View>
-        <View ref='parline' style={styles.parline} />
+        <View ref='parline'    style={[styles.scoreline, styles.parline]} />
       </View>
     );
   }
 }
 
 var styles = StyleSheet.create({
-  container: {
-    height: 50,
+  score_row_wrapper: {
+    height: 60,
     flexDirection: 'row',
     alignItems: 'flex-end',
   },
 
   bar: {
     flex: 1,
-    backgroundColor: '#D6DCDF'
+    // backgroundColor: '#D6DCDF'
   },
 
   parline: {
-    height: 1,
-    backgroundColor: '#B8BDBF',
+    height: 0,
+    bottom: SCOREHEIGHT,
+    borderColor: '#BCD3D1',
+    borderBottomWidth: 1,
     position: 'relative',
-    bottom: 21
-  }
+    opacity: 0.5
+  },
 });
 
 

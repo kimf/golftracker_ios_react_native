@@ -8,7 +8,8 @@ var {
   View,
 } = React;
 
-var CircleChart = require('./CircleChart');
+var SquareChart = require('./components/SquareChart');
+var ScoreRow = require('./components/ScoreRow');
 
 var ScorecardRow = React.createClass({
   underlayColor: function() {
@@ -29,14 +30,14 @@ var ScorecardRow = React.createClass({
             <Text style={styles.score}>{this.strokesOverParString(scorecard)}{scorecard.strokes_over_par}</Text>
 
             <View style={styles.gir}>
-              <Text style={styles.label}>GIR:</Text>
-              <CircleChart style={styles.circle_chart} currentValue={scorecard.girs} totalValue={scorecard.scores.length} />
+              <Text style={styles.label}>GIR: {scorecard.girs}/{scorecard.scores.length}</Text>
+              <SquareChart style={styles.circle_chart} filledCount={scorecard.girs} totalCount={scorecard.scores.length} />
               <Text style={styles.value}>{this.getGirPercentage(scorecard) + '%'}</Text>
             </View>
 
             <View style={styles.gir}>
-              <Text style={styles.label}>FIR:</Text>
-              <CircleChart style={styles.circle_chart} currentValue={scorecard.firs} totalValue={scorecard.not_par_three_holes} />
+              <Text style={styles.label}>FIR: {scorecard.firs}/{scorecard.not_par_three_holes}</Text>
+              <SquareChart style={styles.circle_chart} filledCount={scorecard.firs} totalCount={scorecard.not_par_three_holes} />
               <Text style={styles.value}> {this.getFirPercentage(scorecard) + '%'}</Text>
             </View>
 
@@ -45,6 +46,7 @@ var ScorecardRow = React.createClass({
               <Text style={styles.putt_value}>{scorecard.putts_avg} / {this.props.scorecard.putts_gir_avg}</Text>
             </View>
           </View>
+          <ScoreRow styles={styles.score_row} scores={scorecard.consistency} />
         </View>
       </TouchableHighlight>
     );
@@ -72,14 +74,17 @@ var ScorecardRow = React.createClass({
 
 var styles = StyleSheet.create({
   wrapper: {
-    padding: 10,
-    marginBottom: 5,
-    backgroundColor: '#F5F5F5',
+    margin: 5,
+    backgroundColor: '#E7ECEE',
   },
   meta_header: {
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 5,
     flexDirection: 'row',
     alignItems: 'center',
-    height: 20,
+    height: 15,
+    marginBottom: 5
   },
   course: {
     textAlign: 'left'
@@ -100,6 +105,7 @@ var styles = StyleSheet.create({
   },
   data_row: {
     height: 60,
+    padding: 10,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -115,7 +121,6 @@ var styles = StyleSheet.create({
   putts: {
     flexDirection: 'column',
     alignItems: 'flex-start',
-    height: 60,
     width: 100,
     fontSize: 14,
     flex: 1
@@ -133,15 +138,11 @@ var styles = StyleSheet.create({
     fontSize: 12,
     flex: 1
   },
-  circle_chart: {
-    flex: 1,
-    height: 25,
-    width: 25,
-    marginBottom: 3,
-    marginTop: 3
-  },
   putt_value: {
     flex: 2
+  },
+  score_row: {
+    height: 40
   }
 });
 

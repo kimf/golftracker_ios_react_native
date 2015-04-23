@@ -31,19 +31,17 @@ class SquareChart extends View {
     var fi = -1;
     var squares = [];
 
-    while (++fi < 18) {
-      if (fi >= this.props.totalCount){
-        var square_style = styles.dimmed;
-      } else if(fi < this.props.filledCount){
+    while (++fi < this.props.totalCount) {
+      if(fi < this.props.filledCount){
         var square_style = styles.success;
       } else {
         var square_style = styles.failure;
       }
-      squares.push(<View ref={'squareChart'+fi} style={[square_style, styles.square]} />);
+      squares.push(<View key={fi} style={[square_style, styles.square]} />);
     }
 
     return (
-      <View ref='squarechart' style={styles.container}>
+      <View style={styles.container}>
         {squares}
       </View>
     );

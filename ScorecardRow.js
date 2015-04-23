@@ -14,14 +14,14 @@ var DataRow = require('./components/DataRow');
 
 var ScorecardRow = React.createClass({
   underlayColor: function() {
-    return '#ffeebb';
+    return '#D3EED5';
   },
 
   render: function() {
     var scorecard = this.props.scorecard;
     return (
       <TouchableHighlight underlayColor={this.underlayColor()} onPress={this.props.onSelect}>
-        <View style={styles.wrapper}>
+        <View key={scorecard.id} style={styles.wrapper}>
           <MetaHeader course={scorecard.course.toUpperCase()} date={scorecard.date} />
           <DataRow wrapper_style={styles.data_row} scorecard={scorecard} />
           <ScoreRow wrapper_style={styles.score_row} scores={scorecard.consistency} />
@@ -33,10 +33,9 @@ var ScorecardRow = React.createClass({
 
 var styles = StyleSheet.create({
   wrapper: {
-    margin: 10,
-    marginBottom: 0,
     backgroundColor: '#E7ECEE',
     flexDirection: 'column',
+    marginBottom: 5
   },
   score_row: {
     flex: 1,

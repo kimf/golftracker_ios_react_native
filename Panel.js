@@ -35,9 +35,11 @@ var styles = StyleSheet.create({
     width: 80,
     fontWeight: "300",
     color: '#777777',
+    fontFamily: 'Helvetica Neue'
   },
   panel__text: {
     flex: 1,
+    fontFamily: 'Helvetica Neue'
   },
 });
 

@@ -21,8 +21,9 @@ class MetaHeader extends View {
   }
 
   shortenCourseName(text) {
-    var maxLength = 150;
+    var maxLength = 40;
     var ret = text;
+
     if (ret.length > maxLength) {
         ret = ret.substr(0,maxLength-3) + "...";
     }
@@ -33,13 +34,11 @@ class MetaHeader extends View {
 
 var styles = StyleSheet.create({
   meta_header: {
-    paddingLeft: 10,
-    paddingRight: 10,
-    paddingTop: 5,
+    padding: 10,
+    paddingTop: 20,
     flexDirection: 'row',
     alignItems: 'center',
-    height: 20,
-    marginBottom: 10
+    height: 20
   },
   course: {
     flex: 4,
@@ -50,9 +49,9 @@ var styles = StyleSheet.create({
     flex: 1
   },
   small_and_gray: {
-    fontSize: 9,
+    fontSize: 10,
     fontWeight: '600',
-    color: '#999'
+    color: '#9F9F9F'
   },
 });
 

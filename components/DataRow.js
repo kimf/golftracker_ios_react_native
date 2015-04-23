@@ -98,7 +98,7 @@ class DataRow extends View {
 
 var styles = StyleSheet.create({
   data_row_wrapper: {
-    height: 50,
+    height: 60,
     paddingLeft: 20,
     paddingRight: 10,
     flexDirection: 'row',
@@ -109,43 +109,44 @@ var styles = StyleSheet.create({
     flexDirection: 'column',
   },
   strokes: {
-    fontSize: 40,
-    height: 40,
+    fontSize: 48,
+    height: 60,
     fontWeight: '900',
-    flex: 1
+    flex: 1,
+    fontFamily: 'Helvetica Neue'
   },
   score: {
-    fontSize: 14,
-    height: 20,
+    fontSize: 16,
     fontWeight: 'bold',
     color: '#999',
-    flex: 1
+    flex: 1,
+    fontFamily: 'Helvetica Neue'
   },
   putts: {
     flexDirection: 'column',
-    alignItems: 'flex-start',
-    width: 100,
+    alignItems: 'stretch',
     flex: 1
   },
   gir: {
-    height: 50,
-    width: 100,
     flex: 1,
     flexDirection: 'column',
     alignItems: 'center'
   },
   value: {
-    fontSize: 12,
-    flex: 1
+    fontSize: 14,
+    flex: 1,
+    fontFamily: 'Helvetica Neue'
   },
   putt_value: {
-    flex: 1
+    flex: 1,
+    height: 36
   },
 
   label: {
     fontSize: 9,
     color: '#777777',
-    flex: 1
+    flex: 1,
+    fontFamily: 'Helvetica Neue'
   },
 });
 

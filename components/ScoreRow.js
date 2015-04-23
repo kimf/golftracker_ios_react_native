@@ -35,22 +35,20 @@ class SquareRow extends View {
     this.props.scores.forEach(pushBar);
 
     function pushBar(element, index, array){
-      console.log(element);
       var barStyle = {
         height: SCOREHEIGHT + (element * 10),
         backgroundColor: '#D6DCDF'
         // backgroundColor: SCORECOLORS[element.toString()]
       };
-
-      bars.push(<View ref='view' style={[barStyle, styles.bar]} />);
+      bars.push(<View key={index} style={[barStyle, styles.bar]} />);
     }
 
     return (
       <View>
-        <View ref='view' style={[this.props.wrapper_style, styles.score_row_wrapper]}>
+        <View style={[this.props.wrapper_style, styles.score_row_wrapper]}>
           {bars}
         </View>
-        <View ref='parline'    style={[styles.scoreline, styles.parline]} />
+        <View style={[styles.scoreline, styles.parline]} />
       </View>
     );
   }
@@ -60,12 +58,11 @@ var styles = StyleSheet.create({
   score_row_wrapper: {
     height: 60,
     flexDirection: 'row',
-    alignItems: 'flex-end',
+    alignItems: 'flex-end'
   },
 
   bar: {
     flex: 1,
-    // backgroundColor: '#D6DCDF'
   },
 
   parline: {

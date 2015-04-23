@@ -7,7 +7,7 @@ var {
   NavigatorIOS
 } = React;
 
-var ScorecardsScreen = require('./ScorecardsScreen');
+var ScorecardsList = require('./ScorecardsList');
 
 var App = React.createClass({
   render: function() {
@@ -16,7 +16,7 @@ var App = React.createClass({
         style={styles.app}
         initialRoute={{
           title: 'Scorecards',
-          component: ScorecardsScreen,
+          component: ScorecardsList,
         }}
       />
     );
@@ -25,7 +25,7 @@ var App = React.createClass({
 
 var styles = StyleSheet.create({
   app: {
-    flex: 1,
+    flex: 1
   }
 });
 

@@ -6,7 +6,7 @@ var {
   ScrollView
 } = React;
 
-var Panel = require('./Panel');
+var Panel = require('../components/Panel');
 
 var ScorecardScreen = React.createClass({
 

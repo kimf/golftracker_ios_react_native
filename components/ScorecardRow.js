@@ -8,9 +8,9 @@ var {
   View,
 } = React;
 
-var MetaHeader = require('./components/MetaHeader');
-var ScoreRow = require('./components/ScoreRow');
-var DataRow = require('./components/DataRow');
+var MetaHeader = require('./MetaHeader');
+var ScoreRow = require('./ScoreRow');
+var DataRow = require('./DataRow');
 
 var ScorecardRow = React.createClass({
   underlayColor: function() {

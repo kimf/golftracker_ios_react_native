@@ -12,17 +12,17 @@ var _ = require('lodash');
 var moment = require('moment');
 
 var LoadingScreen = require('./LoadingScreen');
-var ScorecardScreen = require('./ScorecardScreen');
-var ScorecardRow = require('./ScorecardRow');
+var ScorecardDetailView = require('./ScorecardDetailView');
+var ScorecardRow = require('../components/ScorecardRow');
 
-var REQUEST_URL = 'http://golfstats.fransman.se/scorecards?year=All';
+var REQUEST_URL = 'http://golfstats.fransman.se/scorecards?year=2014';
 
 var sectionIDs = [];
 var rowIDs = [];
 var dataBlob = {};
 var scorecards = [];
 
-var ListViewPagingExample = React.createClass({
+var ScorecardsListView = React.createClass({
   getInitialState: function() {
     var getSectionHeaderData = (dataBlob, sectionID) => {
       return dataBlob[sectionID];
@@ -126,7 +126,7 @@ var ListViewPagingExample = React.createClass({
   selectRow: function(scorecard) {
     this.props.navigator.push({
       title: 'Scorecard',
-      component: ScorecardScreen,
+      component: ScorecardDetailView,
       passProps: {scorecard},
     });
   }
@@ -151,4 +151,4 @@ var styles = StyleSheet.create({
   }
 });
 
-module.exports = ListViewPagingExample;
+module.exports = ScorecardsListView;
